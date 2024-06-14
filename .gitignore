@@ -1,3 +1,6 @@
 config.json
 .env
 node_modules
+package.json
+package-lock.json
+05042024.code-workspace
