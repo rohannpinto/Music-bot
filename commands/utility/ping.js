@@ -8,3 +8,4 @@ module.exports = {
 		await interaction.reply('Pong!');
 	},
 };
+
