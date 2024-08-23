@@ -13,7 +13,7 @@ Please copy this repo to use your own Personal Use Copy. For your bot to work, y
 }
 7. Copy the "autobot.bat" from the bot's local directory
 8. Press Windows Key + R and type "%appdata%"
-9. Navigate to "C:\Users\YourUsername\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
-10. Paste the copied file in Step 5 into the Folder mentioned in Step 7
+9. Navigate to Startup folder: "Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+10. Paste the copied file in Step 7 into the destination Folder mentioned in Step 9
 11. Restart your computer and the bot will automatically start
 
