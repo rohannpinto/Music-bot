@@ -1,4 +1,4 @@
-Personal Use Discord Music Bot that utilizes Kenku FM's computer application to pass any audio generated from any valid URL to any channel (with permissions) in any discord (with permissions). 
+Personal Use Discord Music Bot that utilizes Kenku FM's computer application to pass any audio generated from any valid URL to any channel (with permissions) in any Discord server (with permissions). 
 
 Please copy this repo to use your own Personal Use Copy. For your bot to work, you will need to do the following:
 
