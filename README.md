@@ -18,3 +18,9 @@ INSTRUCTIONS:
 12. Paste the copied file in Step 7 into the destination Folder mentioned in Step 9
 13. Restart your computer and the bot will automatically start
 
+ROADMAP:
+
+1. Get Bot Online [DONE]
+3. Get TOS-Compliant Music Capabilities [DONE]
+4. Get additional Admin QOL Features Added [IN PROGRESS]
+5. Get LLM powered Chatbot Interaction Capabilities [NOT STARTED]
