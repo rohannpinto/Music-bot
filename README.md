@@ -1,6 +1,7 @@
 DISCLAIMER
 HarambeBot (the bot) is a Personal Use Discord Music Bot that utilizes Kenku FM's computer application to pass any audio generated from any valid URL to any channel (with permissions) in any Discord server (with permissions). 
 By using HarambeBot or a copied version of this repo, you are agreeing to the bot's original ToS and Privacy Policy as denoted below:
+
 TOS: https://docs.google.com/document/d/1YKQpZLua-HrpnGxKSBiiUYrGd31H7ar9ymMVX9adw4A/edit
 PP: https://docs.google.com/document/d/1W7LMOhB9cl5tsNIUMlVhR4tOGH8CJb3yCv8FVnt9Jyk/edit
 
