@@ -2,6 +2,7 @@
 //review AI code
 
 const { SlashCommandBuilder } = require("discord.js");
+const { token } = require("./config.json");
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -16,7 +17,7 @@ module.exports = {
     // Send the access token request message
     const message = await interaction.reply({
       content:
-        "Requesting an access token. A Disc Gorilla needs to approve this.",
+        "Requesting an access token. A @Disc Gorilla needs to approve this.",
       fetchReply: true,
     });
 
@@ -38,7 +39,7 @@ module.exports = {
     collector.on("collect", async (reaction, user) => {
       // Send the access token as a DM to the user who ran the /token command
       try {
-        const accessToken = "your_access_token_here"; // Generate or define your access token
+        const accessToken = token; // Generate or define your access token
         await member.send(`Your access token is: ${accessToken}`);
 
         // Find or create the 'Disc Monkey' role and assign it to the user

@@ -1,6 +1,5 @@
-//this command will instruct the user to install Kenku FM, with a link to install, and run /token to play songs.
-//review AI code
-
+/*this command will instruct the user to install Kenku FM, with a link to install, and run /token to play songs.
+review AI code*/
 
 const { SlashCommandBuilder, joinVoiceChannel } = require("discord.js");
 
@@ -8,7 +7,7 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName("kenku")
     .setDescription(
-      "Provides installation instructions for Kenku FM and attempts to join your voice channel if you have the Disc Monkey role."
+      "Install Kenku FM and or join your voice channel if you have the Disc Monkey role."
     ),
   async execute(interaction) {
     const member = interaction.member;
@@ -47,9 +46,8 @@ module.exports = {
       }
     } else {
       await interaction.followUp(
-        "You do not have the Disc Monkey role, so HarambeBot cannot join your channel."
+        "1. Please install [Kenku FM](https://kenku.fm). \n 2. Use `/token` to get access. \n 3. Rerun this command start playing songs!"
       );
     }
   },
 };
-

@@ -76,6 +76,6 @@ client.login(token);
 
 // When joining a server, create the role 'Disc Monkey'
 //review AI code
-const guildCreateHandler = require('./events/guildCreate'); // Adjust the path accordingly
+//const guildCreateHandler = require('./automations/guildCreate'); // Adjust the path accordingly
 
-client.on(Events.GuildCreate, guildCreateHandler.execute);
+//client.on(Events.GuildCreate, guildCreateHandler.execute);
