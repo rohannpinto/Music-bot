@@ -1,0 +1,35 @@
+//review AI code
+const { Events } = require("discord.js");
+
+module.exports = {
+  name: Events.GuildCreate, // Event when the bot joins a new server
+  async execute(guild) {
+    try {
+      // Check if the role 'Disc Monkey' already exists
+      let discMonkeyRole = guild.roles.cache.find(
+        (role) => role.name === "Disc Monkey"
+      );
+
+      if (!discMonkeyRole) {
+        // If it doesn't exist, create the 'Disc Monkey' role
+        discMonkeyRole = await guild.roles.create({
+          name: "Disc Monkey",
+          color: "BLUE",
+          reason:
+            "Automatically created by HarambeBot for managing users with music privileges.",
+        });
+
+        console.log(`Created new role 'Disc Monkey' in server: ${guild.name}`);
+      } else {
+        console.log(
+          `Role 'Disc Monkey' already exists in server: ${guild.name}`
+        );
+      }
+    } catch (error) {
+      console.error(
+        `Error creating 'Disc Monkey' role in server ${guild.name}:`,
+        error
+      );
+    }
+  },
+};
