@@ -64,6 +64,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
+
 // When the client is ready, run this code (only once).
 client.once(Events.ClientReady, (readyClient) => {
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
@@ -71,3 +72,10 @@ client.once(Events.ClientReady, (readyClient) => {
 
 // Log in to Discord with your client's token
 client.login(token);
+
+
+// When joining a server, create the role 'Disc Monkey'
+//review AI code
+//const guildCreateHandler = require('./automations/guildCreate'); // Adjust the path accordingly
+
+//client.on(Events.GuildCreate, guildCreateHandler.execute);
