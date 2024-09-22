@@ -2,7 +2,15 @@
 //review AI code
 
 const { SlashCommandBuilder } = require("discord.js");
-const { token } = require("./config.json");
+//const {token,} = require("C:UsersRohanDocumentsCoding ProjectsHarambeBotconfig.json");
+const fs = require("node:fs");
+const path = require("node:path");
+
+const absoluteFilePath = path.join(path.dirname(path.dirname(__dirname)), 'config.json');
+const configData = fs.readFileSync(absoluteFilePath, 'utf8');
+const config = JSON.parse(configData);
+const token = config.token;
+
 
 module.exports = {
   data: new SlashCommandBuilder()
